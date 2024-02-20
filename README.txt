@@ -1,3 +1,5 @@
+PLACE CONTENT IN: C:\Users\[YourUsername]\AppData\LocalLow\F2Games\GoreBox\Mods
+
 The defualt keybind is BackQuote.
 If you wish to change the keybind, go to scripts/hook.txt and edit the "keybind" variable.
 The keys below are provided as a reference for determining which keybind should be listened to:
