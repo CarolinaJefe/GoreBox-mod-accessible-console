@@ -1,0 +1,4 @@
+name:Accessible Console
+description:Allows you to access the mod console via a keybind.
+version:1.0
+active:true

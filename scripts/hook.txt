@@ -1,0 +1,25 @@
+ListenForInput
+keybind = "BackQuote" // Check the README.txt for a list of available keys.
+isActive = false
+
+CloseConsole
+
+OnKeyPress = function(args)
+    if args.key == keybind then
+        if isActive then
+            CloseConsole
+            globals.isActive = false
+        else
+            OpenConsole
+            globals.isActive = true
+        end if
+    end if
+end function
+
+while true
+    while _events.len > 0
+        _nextEvent = _events.pull
+        _nextEvent.invoke(_nextEvent.args)
+    end while
+yield
+end while
